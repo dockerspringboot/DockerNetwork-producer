@@ -1,0 +1,6 @@
+FROM java:8
+WORKDIR /
+ADD ./target/DockerNetwork-producer-0.0.1-SNAPSHOT.jar DockerNetwork-producer-0.0.1-SNAPSHOT.jar
+#Below is the Outside port
+EXPOSE 8550 
+CMD java -jar DockerNetwork-producer-0.0.1-SNAPSHOT.jar
